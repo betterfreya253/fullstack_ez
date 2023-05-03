@@ -1,0 +1,9 @@
+/*
+* Reset CSS
+* This block of code sets the padding and margin of all elements to 0 and the box-sizing to border-box
+*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
