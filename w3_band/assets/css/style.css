@@ -26,11 +26,19 @@ Specific criterias that are needed to keep in mind
 * Shape
 */
 
-#header {
-    height: 46.5px;
-    background-color: #000;
 
+#header {
+    background-color: #000;
+    position: fixed; /** Sets the header element to be fixed at the top of the page 
+    with a height of 46.5px and a black background color to ensure the header is always visible to users even when they scroll down*/
+    top:0;
+    left:0;
+    right: 0;
+    /* The top, left, and right properties are set to 0 to ensure that the header spans the entire viewport width.*/
+    height: 46.5px;
 }
+
+
 #nav {
     display: inline-block;
 }
