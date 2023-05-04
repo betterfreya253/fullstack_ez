@@ -38,7 +38,6 @@ Specific criterias that are needed to keep in mind
     height: 46.5px;
 }
 
-
 #nav {
     display: inline-block;
 }
@@ -101,10 +100,21 @@ li:hover {
     display: block; /* Display the subnav when the user hovers over the dropdown menu */
 }
 
+/* 
+Sets the font size and line height of the dropdown arrow icon to
+ensure that it is properly aligned with the text in the menu item
+*/
 .dropdown .dropdown-arrow {
     font-size: 14px;
     line-height: 46.5px;
 }
+
+
+/*
+* Styles the search button
+* The button is floated to the right of the header
+* The !important keyword is used to ensure that these styles take precedence over any other styles that may be applied to the button.
+*/
 .search-btn {
     float: right;
     padding: 14.5px 22px !important;
@@ -124,8 +134,30 @@ li:hover {
 }
 
 #slider {
+    margin-top: 46.5px; /*Make sure the slider does not contain header*/
+    padding-top: 50%;
+    background: url("/fullstack_ez/w3_band/assets/img/slider-chicago.jpg") top center / cover no-repeat;
+}
+
+#slider .text {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    color: #fff;
+    text-align: center;
+    padding: 47px 0;
+    transform: translateX(-50%);
+}
+
+#slider .text-header{
+    text-transform: capitalize;
+    margin: 30px 0;
+}
+
+#slider .text-content{
 
 }
+
 
 #content {
 
