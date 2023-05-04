@@ -163,6 +163,34 @@ ensure that it is properly aligned with the text in the menu item
 
 }
 
+.content-section {
+    padding: 64px 0;
+    width: 100%;
+    text-align: center;
+}
+
+.content-heading {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 400;
+    margin: 10px 0;
+    font-size: 30px;
+}
+
+.content-subheading {
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.content-subheading::first-letter {
+    text-transform: capitalize;
+}
+
+.content-section .about {
+
+}
+
 #footer {
 
 }
