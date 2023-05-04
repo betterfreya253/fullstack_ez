@@ -31,6 +31,9 @@ Specific criterias that are needed to keep in mind
     background-color: #000;
 
 }
+#nav {
+    display: inline-block;
+}
 
 #nav li {
     display: inline-block;
@@ -88,6 +91,28 @@ li:hover {
 
 .dropdown:hover .subnav {
     display: block; /* Display the subnav when the user hovers over the dropdown menu */
+}
+
+.dropdown .dropdown-arrow {
+    font-size: 14px;
+    line-height: 46.5px;
+}
+.search-btn {
+    float: right;
+    padding: 14.5px 22px !important;
+    box-sizing: border-box;
+    height: 46.5px;
+    width: 61.94px;
+}
+
+.search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .search-icon {
+    color: #fff;
+
 }
 
 #slider {
