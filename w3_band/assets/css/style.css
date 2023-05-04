@@ -36,19 +36,58 @@ Specific criterias that are needed to keep in mind
     display: inline-block;
 }
 
-li a {
-    color: #fff;
-    text-decoration: none;
-    line-height: 46.5px; /*Text always stands in the middle of their own height*/
-    padding: 0 24px;
+
+/* 
+We use this to remove the default underline style of <a> tag
+and style all anchor tags, regardless of whether they are direct or indirect children of list tag
+*/
+li a { 
+    color: #fff; /* Set the font color to white */
+    text-decoration: none; /* Remove the default underline style of <a> tag */
+    line-height: 46.5px; /* Set the line height to 46.5px so that the text always stands in the middle of their own height */
+    padding: 0 24px; /* Set the padding to 0 on the top and bottom and 24px on the left and right */
 }
+
+/*
+* This block of code sets the text-transform property of all direct <a> children of <li> tags to uppercase
+* This is useful for ensuring consistency in the appearance of text across the website
+*/
+li > a {
+    text-transform: uppercase;
+}
+
 
 li:hover {
-    background-color: #ccc;
+    background-color: #ccc; /* Change the background color of the list item when the user hovers over it */
 }
 
-#nav .subnav {
-    display: none;
+.dropdown .subnav {
+    display: none; /* Hide the subnav by default */
+    position: absolute; /* Position the subnav absolutely relative to its parent element */
+    background-color: #fff; /* Set the background color of the subnav to white */
+    z-index: 1; /* Use z-index to control the stacking order of elements with the same position */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow effect to the dropdown menu.
+    The box-shadow property takes 4 values: the horizontal offset, the vertical offset, the blur radius, and the shadow color. 
+    The shadow is black with a slight transparency, and has a horizontal and vertical offset of 0, meaning it is directly behind the element. 
+    The blur radius of 10px creates a soft, feathered edge to the shadow. */
+    min-width: 160px; /* Sets the minimum width of the dropdown menu to 160px.
+    This is useful for ensuring that the dropdown menu is wide enough to display its contents without being too narrow.
+    If the width is too narrow, the text may wrap or be cut off, making it difficult to read.
+    By setting a minimum width, we ensure that the dropdown menu is always wide enough to display its contents properly.
+    */
+
+}
+
+/*
+* This block of code sets the color and display of the subnav links in the dropdown menu
+*/
+.dropdown .subnav a {
+    color: #000; /* Set the font color of the subnav links to black */
+    display: block; /* Set the display of the subnav links to block to ensure they take up the full width of the dropdown menu */
+}
+
+.dropdown:hover .subnav {
+    display: block; /* Display the subnav when the user hovers over the dropdown menu */
 }
 
 #slider {
