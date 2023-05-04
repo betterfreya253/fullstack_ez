@@ -7,3 +7,58 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-family: Arial, Helvetica, sans-serif; /*Placeholder font will be used if the first 2 fonts are not found*/
+}
+
+/* Which elements to style first
+* From outer to inner
+* From top to bottom
+* From overall to details
+*/
+
+/* 
+Specific criterias that are needed to keep in mind
+* Position
+* Size
+* Color
+* Shape
+*/
+
+#header {
+    height: 46.5px;
+    background-color: #000;
+
+}
+
+#nav li {
+    display: inline-block;
+}
+
+li a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 46.5px; /*Text always stands in the middle of their own height*/
+    padding: 0 24px;
+}
+
+li:hover {
+    background-color: #ccc;
+}
+
+#nav .subnav {
+    display: none;
+}
+
+#slider {
+
+}
+
+#content {
+
+}
+
+#footer {
+
+}
